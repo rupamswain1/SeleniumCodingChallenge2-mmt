@@ -43,7 +43,7 @@ public class FlightResultPage extends HomePage{
 	
 	By SelectedFlightPrice=By.xpath("//p[@class='actual-price']");
 	
-	//Contructor
+	//Constructor to initialize webelements
 	public FlightResultPage()
 	{
 		PageFactory.initElements(Driver.driver, this);
@@ -60,7 +60,7 @@ public class FlightResultPage extends HomePage{
 		}
 		return departureFilghts.size();
 	}
-	//counts return departure filghts, flights on right side. Returns no flight exception if flight not found
+	//counts return departure flights, flights on right side. Returns no flight exception if flight not found
 	public int returnFilightCount() throws Exception
 	{
 		PageScroll.toUP();
@@ -72,7 +72,7 @@ public class FlightResultPage extends HomePage{
 		}
 		return ReturnFilghts.size();
 	}
-	//counts filght when no filter is applied
+	//counts flight when no filter is applied
 	public int[] NoFilterFlightCount() throws Exception
 	{
 		
@@ -104,7 +104,8 @@ public class FlightResultPage extends HomePage{
 		return count;
 	}
 	
-	//Returns the Selected flight prices
+	//Returns the Selected flight prices, inputs are provided from test , dep stands for departure flight number and ret stands for return flight number
+	//if slashed price is displayed then it will take slashed price as total price
 	public Map<String, String> selectRandomFlight(int dep,int ret)
 	{
 		Map<String, String> Prices=new HashMap<String, String>();
@@ -130,7 +131,7 @@ public class FlightResultPage extends HomePage{
 		}
 		return Prices;
 	}
-	//Clears flight filter
+	//Clears flight filter eg: one stop, non stop
 	public void clearFilter()
 	{
 		if(ElementVisibility.isVisble(clearFilter))

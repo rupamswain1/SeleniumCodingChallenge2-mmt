@@ -8,6 +8,7 @@ import challenge.mmt.Browser.Driver;
 
 public class ElementVisibility {
 
+	//validates if element is present in DOM or not, if the element is not present in DOM and is not displayed, it will return false
 	public static boolean isVisble(WebElement element)
 	{
 		boolean flag=false;

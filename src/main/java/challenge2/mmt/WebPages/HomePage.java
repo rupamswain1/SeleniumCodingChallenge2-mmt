@@ -1,7 +1,5 @@
 package challenge2.mmt.WebPages;
 
-import java.util.List;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -50,13 +48,13 @@ public class HomePage {
 	String TripTypexpath="//li[contains(text(),'%replacable%')]/child::span";
 	
 	public static FlightResultPage obj=null;
-	
+	//Constructor to initialize webelements
 	public HomePage()
 	{
 		PageFactory.initElements(Driver.driver, this);
 	}
 	
-	//Searches for flight by entering FROM,TO, DEPARTURE and RETURN details
+	//Searches for flight by entering FROM,TO, DEPARTURE and RETURN details, clicks on search and returns object of flight result page
 	public FlightResultPage Search() 
 	{
 		FlightsTab.click();

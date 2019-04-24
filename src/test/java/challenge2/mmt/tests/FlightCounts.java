@@ -10,7 +10,7 @@ public class FlightCounts {
 	
 	public static FlightResultPage pageObj=null;
 	int[] counts;
-	//Prints flight number when no flter is selected
+	//Prints flight number when no filter is selected
   @Test(priority=1)
   public void NoFilterFlightCounts() throws Exception 
   {
