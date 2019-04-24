@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Selenium Coding challenge Part1- Naveen Automation Labs">
+<suite name="Selenium Coding challenge Part 2- Naveen Automation Labs">
 	
-	
-	<test name="Selenium Coding challenge Part2- Naveen Automation Labs" preserve-order="true">
+	<listeners>
+	<listener class-name="challenge2.mmt.Listner.Listner"></listener>
+	</listeners>
+	<test name="search for Flights" preserve-order="true">
 		<classes>
 			<class name="challenge2.mmt.tests.TestSetup"></class>
 			<class name="challenge2.mmt.tests.SearchFlightTest"></class>
-			<class name="challenge2.mmt.tests.FlightCounts"></class>
-			
 		</classes>
 	</test>
-	<test name="Selenium Coding challenge Part2- Naveen Automation Labs2" preserve-order="true">
+	<test name="Count Flight with different Filters" preserve-order="true">
+		<classes>
+			<class name="challenge2.mmt.tests.FlightCounts"></class>
+		</classes>
+	</test>
+	
+	<test name="Validate Flight Prices" preserve-order="true">
 		<classes>
 			<class name="challenge2.mmt.tests.FlightPrices"></class>
 		</classes>

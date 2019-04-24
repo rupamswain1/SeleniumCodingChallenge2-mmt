@@ -2,7 +2,7 @@ package challenge.mmt.Browser;
 
 public class OsPath {
 	
-	
+	//Provide browser exe path based on OS
 	public static String getPath(String browser) 
 	{
 		String OS=System.getProperty("os.name");

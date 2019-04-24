@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 
 public class DisableImage 
 {
+	//disables images in chrome browser
 	public void disableImg(ChromeOptions options)
 	{
 		HashMap<String, Object> images=new HashMap<String, Object>();
@@ -17,6 +18,7 @@ public class DisableImage
 		pref.put("profile.default_content_setting_values", images);
 		options.setExperimentalOption("prefs", pref);
 	}
+	//disables images in Firefox browser
 	public void disableImg(FirefoxOptions options)
 	{
 		FirefoxProfile profile=new FirefoxProfile();

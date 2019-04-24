@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import challenge.mmt.Browser.Driver;
+import challenge.mmt.Report.LogStatus;
 import challenge.mmt.util.ElementVisibility;
 import challenge.mmt.util.PageScroll;
 
@@ -41,23 +42,38 @@ public class FlightResultPage extends HomePage{
 	WebElement shlashedTotalPrice;
 	
 	By SelectedFlightPrice=By.xpath("//p[@class='actual-price']");
+	
+	//Contructor
 	public FlightResultPage()
 	{
 		PageFactory.initElements(Driver.driver, this);
 	}
-	public int departureFilightCount()
+	
+	//counts total departure filghts, flights on left side. Returns no flight exception if flight not found
+	public int departureFilightCount() throws Exception
 	{
 		PageScroll.toBottomOfPage();
+		if(departureFilghts.size()<1)
+		{
+			LogStatus.fail("Flights not found");
+			throw new Exception("No Flight availabe");
+		}
 		return departureFilghts.size();
 	}
-	
-	public int returnFilightCount()
+	//counts return departure filghts, flights on right side. Returns no flight exception if flight not found
+	public int returnFilightCount() throws Exception
 	{
 		PageScroll.toUP();
+		if(ReturnFilghts.size()<1)
+		{
+			LogStatus.fail("Flights not found");
+			throw new Exception("No Flight availabe");
+			
+		}
 		return ReturnFilghts.size();
 	}
-	
-	public int[] NoFilterFlightCount()
+	//counts filght when no filter is applied
+	public int[] NoFilterFlightCount() throws Exception
 	{
 		
 		clearFilter();
@@ -67,7 +83,8 @@ public class FlightResultPage extends HomePage{
 		return count;
 	}
 	
-	public int[] NoStopFlightCount()
+	//Counts flight when NOn stop filter is applied
+	public int[] NoStopFlightCount() throws Exception
 	{
 		clearFilter();
 		NonStopCheckbox.click();
@@ -76,8 +93,8 @@ public class FlightResultPage extends HomePage{
 		count[1]=returnFilightCount();
 		return count;
 	}
-	
-	public int[] oneStopFlightCount()
+	//counts flight when one stop filter is applied
+	public int[] oneStopFlightCount() throws Exception
 	{
 		clearFilter();
 		oneStopCheckbox.click();
@@ -87,6 +104,7 @@ public class FlightResultPage extends HomePage{
 		return count;
 	}
 	
+	//Returns the Selected flight prices
 	public Map<String, String> selectRandomFlight(int dep,int ret)
 	{
 		Map<String, String> Prices=new HashMap<String, String>();
@@ -112,7 +130,7 @@ public class FlightResultPage extends HomePage{
 		}
 		return Prices;
 	}
-	
+	//Clears flight filter
 	public void clearFilter()
 	{
 		if(ElementVisibility.isVisble(clearFilter))

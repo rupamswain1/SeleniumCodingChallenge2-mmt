@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Selenium Coding challenge Part 2- Naveen Automation Labs]">
+  <listeners>
+    <listener class-name="challenge2.mmt.Listner.Listner"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Count Flight with different Filters(failed)">
+    <classes>
+      <class name="challenge2.mmt.tests.FlightCounts">
+        <methods>
+          <include name="NoStopsFlightCount"/>
+          <include name="NoFilterFlightCounts"/>
+          <include name="OnStopFlightCount"/>
+        </methods>
+      </class> <!-- challenge2.mmt.tests.FlightCounts -->
+    </classes>
+  </test> <!-- Count Flight with different Filters(failed) -->
+  <test thread-count="5" verbose="0" name="Validate Flight Prices(failed)">
+    <classes>
+      <class name="challenge2.mmt.tests.FlightPrices">
+        <methods>
+          <include name="FlightPrice"/>
+        </methods>
+      </class> <!-- challenge2.mmt.tests.FlightPrices -->
+    </classes>
+  </test> <!-- Validate Flight Prices(failed) -->
+</suite> <!-- Failed suite [Selenium Coding challenge Part 2- Naveen Automation Labs] -->

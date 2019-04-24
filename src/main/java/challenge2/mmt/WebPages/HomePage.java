@@ -56,7 +56,7 @@ public class HomePage {
 		PageFactory.initElements(Driver.driver, this);
 	}
 	
-	
+	//Searches for flight by entering FROM,TO, DEPARTURE and RETURN details
 	public FlightResultPage Search() 
 	{
 		FlightsTab.click();

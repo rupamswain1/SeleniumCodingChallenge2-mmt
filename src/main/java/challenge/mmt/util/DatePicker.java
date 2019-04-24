@@ -18,7 +18,7 @@ public class DatePicker {
 		return returnDate;
 	}
 
-	
+	//Picks up current system for Departure DAte and +7 days for Return date Retursn in format tue 13 Apr 2019
 	public static DatePicker getDates()
 	{
 		DatePicker date=new DatePicker();

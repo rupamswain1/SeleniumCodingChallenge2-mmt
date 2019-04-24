@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Selenium Coding challenge Part 2- Naveen Automation Labs" duration-ms="65543" started-at="2019-04-24T02:49:57Z" finished-at="2019-04-24T02:51:02Z">
+    <groups>
+    </groups>
+    <test name="search for Flights" duration-ms="18395" started-at="2019-04-24T02:49:57Z" finished-at="2019-04-24T02:50:15Z">
+      <class name="challenge2.mmt.tests.SearchFlightTest">
+        <test-method status="PASS" signature="searchFlights()[pri:0, instance:challenge2.mmt.tests.SearchFlightTest@d176a31]" name="searchFlights" duration-ms="18343" started-at="2019-04-24T02:49:57Z" finished-at="2019-04-24T02:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFlights -->
+      </class> <!-- challenge2.mmt.tests.SearchFlightTest -->
+    </test> <!-- search for Flights -->
+    <test name="Count Flight with different Filters" duration-ms="20724" started-at="2019-04-24T02:50:15Z" finished-at="2019-04-24T02:50:36Z">
+      <class name="challenge2.mmt.tests.FlightCounts">
+        <test-method status="PASS" signature="NoFilterFlightCounts()[pri:1, instance:challenge2.mmt.tests.FlightCounts@677b8e13]" name="NoFilterFlightCounts" duration-ms="7416" started-at="2019-04-24T02:50:15Z" finished-at="2019-04-24T02:50:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NoFilterFlightCounts -->
+        <test-method status="PASS" signature="NoStopsFlightCount()[pri:2, instance:challenge2.mmt.tests.FlightCounts@677b8e13]" name="NoStopsFlightCount" duration-ms="7588" started-at="2019-04-24T02:50:23Z" finished-at="2019-04-24T02:50:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NoStopsFlightCount -->
+        <test-method status="PASS" signature="OnStopFlightCount()[pri:3, instance:challenge2.mmt.tests.FlightCounts@677b8e13]" name="OnStopFlightCount" duration-ms="5706" started-at="2019-04-24T02:50:30Z" finished-at="2019-04-24T02:50:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnStopFlightCount -->
+      </class> <!-- challenge2.mmt.tests.FlightCounts -->
+    </test> <!-- Count Flight with different Filters -->
+    <test name="Validate Flight Prices" duration-ms="26356" started-at="2019-04-24T02:50:36Z" finished-at="2019-04-24T02:51:02Z">
+      <class name="challenge2.mmt.tests.TestSetup">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:challenge2.mmt.tests.TestSetup@f14e5bf]" name="beforeSuite" is-config="true" duration-ms="28990" started-at="2019-04-24T02:49:28Z" finished-at="2019-04-24T02:49:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:challenge2.mmt.tests.TestSetup@f14e5bf]" name="afterSuite" is-config="true" duration-ms="9902" started-at="2019-04-24T02:51:02Z" finished-at="2019-04-24T02:51:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- challenge2.mmt.tests.TestSetup -->
+      <class name="challenge2.mmt.tests.FlightPrices">
+        <test-method status="PASS" signature="FlightPrice(java.lang.String, java.lang.String)[pri:0, instance:challenge2.mmt.tests.FlightPrices@5cf8edcf]" name="FlightPrice" duration-ms="5966" started-at="2019-04-24T02:50:45Z" data-provider="dp" finished-at="2019-04-24T02:50:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightPrice -->
+        <test-method status="PASS" signature="FlightPrice(java.lang.String, java.lang.String)[pri:0, instance:challenge2.mmt.tests.FlightPrices@5cf8edcf]" name="FlightPrice" duration-ms="5358" started-at="2019-04-24T02:50:51Z" data-provider="dp" finished-at="2019-04-24T02:50:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightPrice -->
+        <test-method status="PASS" signature="FlightPrice(java.lang.String, java.lang.String)[pri:0, instance:challenge2.mmt.tests.FlightPrices@5cf8edcf]" name="FlightPrice" duration-ms="5818" started-at="2019-04-24T02:50:57Z" data-provider="dp" finished-at="2019-04-24T02:51:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightPrice -->
+      </class> <!-- challenge2.mmt.tests.FlightPrices -->
+    </test> <!-- Validate Flight Prices -->
+  </suite> <!-- Selenium Coding challenge Part 2- Naveen Automation Labs -->
+</testng-results>
