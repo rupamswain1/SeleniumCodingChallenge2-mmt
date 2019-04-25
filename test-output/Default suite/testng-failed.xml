@@ -5,7 +5,7 @@
     <classes>
       <class name="challenge2.mmt.tests.FlightPrices">
         <methods>
-          <include name="FlightPrices"/>
+          <include name="FlightPrice"/>
         </methods>
       </class> <!-- challenge2.mmt.tests.FlightPrices -->
     </classes>

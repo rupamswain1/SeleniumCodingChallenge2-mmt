@@ -2,29 +2,29 @@
 <testng-results skipped="1" failed="3" ignored="0" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Selenium Coding challenge Part 2- Naveen Automation Labs" duration-ms="89552" started-at="2019-04-23T16:08:50Z" finished-at="2019-04-23T16:10:19Z">
+  <suite name="Selenium Coding challenge Part 2- Naveen Automation Labs" duration-ms="67572" started-at="2019-04-24T19:05:43Z" finished-at="2019-04-24T19:06:50Z">
     <groups>
     </groups>
-    <test name="search for Flights" duration-ms="35346" started-at="2019-04-23T16:08:50Z" finished-at="2019-04-23T16:09:25Z">
+    <test name="search for Flights" duration-ms="13467" started-at="2019-04-24T19:05:43Z" finished-at="2019-04-24T19:05:56Z">
       <class name="challenge2.mmt.tests.SearchFlightTest">
-        <test-method status="PASS" signature="searchFlights()[pri:0, instance:challenge2.mmt.tests.SearchFlightTest@68c4039c]" name="searchFlights" duration-ms="35211" started-at="2019-04-23T16:08:50Z" finished-at="2019-04-23T16:09:25Z">
+        <test-method status="PASS" signature="searchFlights()[pri:0, instance:challenge2.mmt.tests.SearchFlightTest@68c4039c]" name="searchFlights" duration-ms="13389" started-at="2019-04-24T19:05:43Z" finished-at="2019-04-24T19:05:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchFlights -->
       </class> <!-- challenge2.mmt.tests.SearchFlightTest -->
     </test> <!-- search for Flights -->
-    <test name="Count Flight with different Filters" duration-ms="40484" started-at="2019-04-23T16:09:25Z" finished-at="2019-04-23T16:10:06Z">
+    <test name="Count Flight with different Filters" duration-ms="40227" started-at="2019-04-24T19:05:56Z" finished-at="2019-04-24T19:06:37Z">
       <class name="challenge2.mmt.tests.FlightCounts">
-        <test-method status="FAIL" signature="NoFilterFlightCounts()[pri:1, instance:challenge2.mmt.tests.FlightCounts@f6c48ac]" name="NoFilterFlightCounts" duration-ms="13796" started-at="2019-04-23T16:09:25Z" finished-at="2019-04-23T16:09:39Z">
+        <test-method status="FAIL" signature="NoFilterFlightCounts()[pri:1, instance:challenge2.mmt.tests.FlightCounts@f6c48ac]" name="NoFilterFlightCounts" duration-ms="13833" started-at="2019-04-24T19:05:56Z" finished-at="2019-04-24T19:06:10Z">
           <exception class="java.lang.Exception">
             <message>
               <![CDATA[No Flight availabe]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.Exception: No Flight availabe
-at challenge2.mmt.WebPages.FlightResultPage.departureFilightCount(FlightResultPage.java:55)
-at challenge2.mmt.WebPages.FlightResultPage.NoFilterFlightCount(FlightResultPage.java:77)
-at challenge2.mmt.tests.FlightCounts.NoFilterFlightCounts(FlightCounts.java:16)
+at challenge2.mmt.WebPages.FlightResultPage.departureFilightCount(FlightResultPage.java:59)
+at challenge2.mmt.WebPages.FlightResultPage.NoFilterFlightCount(FlightResultPage.java:81)
+at challenge2.mmt.tests.FlightCounts.NoFilterFlightCounts(FlightCounts.java:18)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -56,42 +56,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NoFilterFlightCounts -->
-        <test-method status="FAIL" signature="NoStopsFlightCount()[pri:2, instance:challenge2.mmt.tests.FlightCounts@f6c48ac]" name="NoStopsFlightCount" duration-ms="13261" started-at="2019-04-23T16:09:39Z" finished-at="2019-04-23T16:09:52Z">
+        <test-method status="FAIL" signature="NoStopsFlightCount()[pri:2, instance:challenge2.mmt.tests.FlightCounts@f6c48ac]" name="NoStopsFlightCount" duration-ms="13185" started-at="2019-04-24T19:06:10Z" finished-at="2019-04-24T19:06:23Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Non Stop']/preceding-sibling::span"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[Unable to locate element: //span[text()='Non Stop']/preceding-sibling::span
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DAWN', ip: '192.168.1.11', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\RUPAM\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51754}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 07140ef110a1b85f43d9371edb2e5257
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7312, moz:profile: C:\Users\RUPAM\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 63f81557-4064-4fda-b71c-4708475b0c85
 *** Element info: {Using=xpath, value=//span[text()='Non Stop']/preceding-sibling::span}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Non Stop']/preceding-sibling::span"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()='Non Stop']/preceding-sibling::span
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DAWN', ip: '192.168.1.11', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\RUPAM\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51754}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 07140ef110a1b85f43d9371edb2e5257
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7312, moz:profile: C:\Users\RUPAM\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 63f81557-4064-4fda-b71c-4708475b0c85
 *** Element info: {Using=xpath, value=//span[text()='Non Stop']/preceding-sibling::span}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
@@ -104,14 +96,14 @@ at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:483)
 at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at org.openqa.selenium.support.events.EventFiringWebDriver$$Lambda$206/125994398.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$$Lambda$220/1188401255.invoke(Unknown Source)
 at com.sun.proxy.$Proxy8.findElement(Unknown Source)
 at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
-at challenge2.mmt.WebPages.FlightResultPage.NoStopFlightCount(FlightResultPage.java:85)
-at challenge2.mmt.tests.FlightCounts.NoStopsFlightCount(FlightCounts.java:28)
+at challenge2.mmt.WebPages.FlightResultPage.NoStopFlightCount(FlightResultPage.java:90)
+at challenge2.mmt.tests.FlightCounts.NoStopsFlightCount(FlightCounts.java:31)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,42 +135,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NoStopsFlightCount -->
-        <test-method status="FAIL" signature="OnStopFlightCount()[pri:3, instance:challenge2.mmt.tests.FlightCounts@f6c48ac]" name="OnStopFlightCount" duration-ms="13321" started-at="2019-04-23T16:09:52Z" finished-at="2019-04-23T16:10:06Z">
+        <test-method status="FAIL" signature="OnStopFlightCount()[pri:3, instance:challenge2.mmt.tests.FlightCounts@f6c48ac]" name="OnStopFlightCount" duration-ms="13172" started-at="2019-04-24T19:06:23Z" finished-at="2019-04-24T19:06:37Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='1 Stop']/preceding-sibling::span"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[Unable to locate element: //span[text()='1 Stop']/preceding-sibling::span
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DAWN', ip: '192.168.1.11', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\RUPAM\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51754}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 07140ef110a1b85f43d9371edb2e5257
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7312, moz:profile: C:\Users\RUPAM\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 63f81557-4064-4fda-b71c-4708475b0c85
 *** Element info: {Using=xpath, value=//span[text()='1 Stop']/preceding-sibling::span}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='1 Stop']/preceding-sibling::span"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()='1 Stop']/preceding-sibling::span
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DAWN', ip: '192.168.1.11', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\RUPAM\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51754}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 07140ef110a1b85f43d9371edb2e5257
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7312, moz:profile: C:\Users\RUPAM\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 63f81557-4064-4fda-b71c-4708475b0c85
 *** Element info: {Using=xpath, value=//span[text()='1 Stop']/preceding-sibling::span}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
@@ -190,14 +174,14 @@ at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:483)
 at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at org.openqa.selenium.support.events.EventFiringWebDriver$$Lambda$206/125994398.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$$Lambda$220/1188401255.invoke(Unknown Source)
 at com.sun.proxy.$Proxy8.findElement(Unknown Source)
 at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
-at challenge2.mmt.WebPages.FlightResultPage.oneStopFlightCount(FlightResultPage.java:95)
-at challenge2.mmt.tests.FlightCounts.OnStopFlightCount(FlightCounts.java:37)
+at challenge2.mmt.WebPages.FlightResultPage.oneStopFlightCount(FlightResultPage.java:100)
+at challenge2.mmt.tests.FlightCounts.OnStopFlightCount(FlightCounts.java:41)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -231,19 +215,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- OnStopFlightCount -->
       </class> <!-- challenge2.mmt.tests.FlightCounts -->
     </test> <!-- Count Flight with different Filters -->
-    <test name="Validate Flight Prices" duration-ms="13339" started-at="2019-04-23T16:10:06Z" finished-at="2019-04-23T16:10:19Z">
+    <test name="Validate Flight Prices" duration-ms="13745" started-at="2019-04-24T19:06:37Z" finished-at="2019-04-24T19:06:50Z">
       <class name="challenge2.mmt.tests.TestSetup">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:challenge2.mmt.tests.TestSetup@3532ec19]" name="beforeSuite" is-config="true" duration-ms="39380" started-at="2019-04-23T16:08:10Z" finished-at="2019-04-23T16:08:50Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:challenge2.mmt.tests.TestSetup@3532ec19]" name="beforeSuite" is-config="true" duration-ms="32735" started-at="2019-04-24T19:05:10Z" finished-at="2019-04-24T19:05:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:challenge2.mmt.tests.TestSetup@3532ec19]" name="afterSuite" is-config="true" duration-ms="2785" started-at="2019-04-23T16:10:19Z" finished-at="2019-04-23T16:10:22Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:challenge2.mmt.tests.TestSetup@3532ec19]" name="afterSuite" is-config="true" duration-ms="3923" started-at="2019-04-24T19:06:50Z" finished-at="2019-04-24T19:06:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- challenge2.mmt.tests.TestSetup -->
       <class name="challenge2.mmt.tests.FlightPrices">
-        <test-method status="SKIP" signature="FlightPrice(java.lang.String, java.lang.String)[pri:0, instance:challenge2.mmt.tests.FlightPrices@5f341870]" name="FlightPrice" duration-ms="0" started-at="2019-04-23T16:10:19Z" data-provider="dp" finished-at="2019-04-23T16:10:19Z">
+        <test-method status="SKIP" signature="FlightPrice(java.lang.String, java.lang.String)[pri:0, instance:challenge2.mmt.tests.FlightPrices@5f341870]" name="FlightPrice" duration-ms="0" started-at="2019-04-24T19:06:50Z" data-provider="dp" finished-at="2019-04-24T19:06:50Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.Exception: No Flight availabe]]>
@@ -274,8 +258,8 @@ at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: java.lang.Exception: No Flight availabe
-at challenge2.mmt.WebPages.FlightResultPage.departureFilightCount(FlightResultPage.java:55)
-at challenge2.mmt.tests.FlightPrices.dp(FlightPrices.java:45)
+at challenge2.mmt.WebPages.FlightResultPage.departureFilightCount(FlightResultPage.java:59)
+at challenge2.mmt.tests.FlightPrices.dp(FlightPrices.java:55)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

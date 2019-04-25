@@ -14,6 +14,7 @@ import challenge.mmt.Browser.Driver;
 import challenge.mmt.Report.LogStatus;
 import challenge.mmt.util.ElementVisibility;
 import challenge.mmt.util.PageScroll;
+import challenge.mmt.util.Wait;
 
 public class FlightResultPage extends HomePage{
 
@@ -52,6 +53,7 @@ public class FlightResultPage extends HomePage{
 	//counts total departure filghts, flights on left side. Returns no flight exception if flight not found
 	public int departureFilightCount() throws Exception
 	{
+		Wait.toBeclickable(NonStopCheckbox);;
 		PageScroll.toBottomOfPage();
 		if(departureFilghts.size()<1)
 		{

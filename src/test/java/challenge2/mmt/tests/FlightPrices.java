@@ -22,6 +22,7 @@ public class FlightPrices {
 	}
 
 	//Validates flight prices
+	
 	@Test(dataProvider="dp")
 	public void FlightPrice(String ret, String dep)
 	{
@@ -43,6 +44,7 @@ public class FlightPrices {
 		LogStatus.pass("Price is matching "+numericalPrice(prices.get("total Price"))+ " and "+ expectedTotal);
 	}
 	//Provides random integer for flight price validations
+	//it provides int for top 10 flights if number of flight is more than 10 else it selects between 0 to number of flight
 	@DataProvider
 	public String[][] dp() throws Exception
 	{
