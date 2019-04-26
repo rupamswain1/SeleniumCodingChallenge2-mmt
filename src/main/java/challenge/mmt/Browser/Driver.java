@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import challenge.mmt.Report.LogStatus;
@@ -30,6 +31,7 @@ public class Driver extends ReadPropertyFile
 				
 				System.setProperty("webdriver.chrome.driver",OsPath.getPath(browser));
 				ChromeOptions options=new ChromeOptions();
+				options.addArguments("--incognito");
 				if(imageDisable.equalsIgnoreCase("yes"))
 				{
 					new DisableImage().disableImg(options);
@@ -38,6 +40,8 @@ public class Driver extends ReadPropertyFile
 				{
 					new HeadlessMode().headless(options);
 				}*/
+				DesiredCapabilities capabilites=DesiredCapabilities.chrome();
+				capabilites.setCapability(ChromeOptions.CAPABILITY, options);
 				driver=new ChromeDriver(options);
 				
 				LogStatus.pass("Chrome drive launched with headless mode = "+headless.toUpperCase()+", Image Disable mode = "+imageDisable.toUpperCase());
@@ -63,6 +67,7 @@ public class Driver extends ReadPropertyFile
 				{
 					new HeadlessMode().headless(FFoptions);
 				}
+				
 				driver=new FirefoxDriver(FFoptions);
 				
 				
@@ -80,6 +85,7 @@ public class Driver extends ReadPropertyFile
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		EventHandlerInit();
 		driver.get(ReadPropertyFile.get("url"));
+		driver.manage().deleteAllCookies();
 	}
 	
 	//Initializes browser instance

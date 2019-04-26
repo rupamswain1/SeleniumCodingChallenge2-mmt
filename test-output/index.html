@@ -166,26 +166,12 @@
                   <a name="NoFilterFlightCounts">
                   </a> <!-- NoFilterFlightCounts -->
                   <span class="method-name">NoFilterFlightCounts</span>
-                  <div class="stack-trace">java.lang.Exception: No Flight availabe
-	at challenge2.mmt.WebPages.FlightResultPage.departureFilightCount(FlightResultPage.java:59)
-	at challenge2.mmt.WebPages.FlightResultPage.NoFilterFlightCount(FlightResultPage.java:81)
-	at challenge2.mmt.tests.FlightCounts.NoFilterFlightCounts(FlightCounts.java:18)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="NoStopsFlightCount">
-                  </a> <!-- NoStopsFlightCount -->
-                  <span class="method-name">NoStopsFlightCount</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()=&apos;Non Stop&apos;]/preceding-sibling::span
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to convert data to an object
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DAWN&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_05&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7312, moz:profile: C:\Users\RUPAM\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 63f81557-4064-4fda-b71c-4708475b0c85
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13068, moz:profile: C:\Users\RUPAM\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8e94731-0562-4dda-a819-de6e614260a1
 *** Element info: {Using=xpath, value=//span[text()=&apos;Non Stop&apos;]/preceding-sibling::span}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -203,10 +189,46 @@ Session ID: 63f81557-4064-4fda-b71c-4708475b0c85
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at challenge2.mmt.WebPages.FlightResultPage.NoStopFlightCount(FlightResultPage.java:90)
-	at challenge2.mmt.tests.FlightCounts.NoStopsFlightCount(FlightCounts.java:31)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at challenge.mmt.util.Wait.toBeclickable(Wait.java:16)
+	at challenge2.mmt.WebPages.FlightResultPage.departureFilightCount(FlightResultPage.java:56)
+	at challenge2.mmt.WebPages.FlightResultPage.NoFilterFlightCount(FlightResultPage.java:83)
+	at challenge2.mmt.tests.FlightCounts.NoFilterFlightCounts(FlightCounts.java:18)
 ... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NoStopsFlightCount">
+                  </a> <!-- NoStopsFlightCount -->
+                  <span class="method-name">NoStopsFlightCount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DAWN&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13068, moz:profile: C:\Users\RUPAM\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8e94731-0562-4dda-a819-de6e614260a1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTimeouts.implicitlyWait(EventFiringWebDriver.java:670)
+	at challenge.mmt.util.ElementVisibility.isVisble(ElementVisibility.java:27)
+	at challenge2.mmt.WebPages.FlightResultPage.clearFilter(FlightResultPage.java:139)
+	at challenge2.mmt.WebPages.FlightResultPage.NoStopFlightCount(FlightResultPage.java:91)
+	at challenge2.mmt.tests.FlightCounts.NoStopsFlightCount(FlightCounts.java:31)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -215,34 +237,25 @@ Session ID: 63f81557-4064-4fda-b71c-4708475b0c85
                   <a name="OnStopFlightCount">
                   </a> <!-- OnStopFlightCount -->
                   <span class="method-name">OnStopFlightCount</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()=&apos;1 Stop&apos;]/preceding-sibling::span
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DAWN&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_05&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7312, moz:profile: C:\Users\RUPAM\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 63f81557-4064-4fda-b71c-4708475b0c85
-*** Element info: {Using=xpath, value=//span[text()=&apos;1 Stop&apos;]/preceding-sibling::span}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13068, moz:profile: C:\Users\RUPAM\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8e94731-0562-4dda-a819-de6e614260a1
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$$Lambda$220/1188401255.invoke(Unknown Source)
-	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at challenge2.mmt.WebPages.FlightResultPage.oneStopFlightCount(FlightResultPage.java:100)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTimeouts.implicitlyWait(EventFiringWebDriver.java:670)
+	at challenge.mmt.util.ElementVisibility.isVisble(ElementVisibility.java:15)
+	at challenge2.mmt.WebPages.FlightResultPage.clearFilter(FlightResultPage.java:139)
+	at challenge2.mmt.WebPages.FlightResultPage.oneStopFlightCount(FlightResultPage.java:101)
 	at challenge2.mmt.tests.FlightCounts.OnStopFlightCount(FlightCounts.java:41)
-... Removed 32 stack frames
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -259,12 +272,31 @@ Session ID: 63f81557-4064-4fda-b71c-4708475b0c85
                   <a name="FlightPrice">
                   </a> <!-- FlightPrice -->
                   <span class="method-name">FlightPrice</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.Exception: No Flight availabe
-Caused by: java.lang.Exception: No Flight availabe
-	at challenge2.mmt.WebPages.FlightResultPage.departureFilightCount(FlightResultPage.java:59)
-	at challenge2.mmt.tests.FlightPrices.dp(FlightPrices.java:55)
+                  <div class="stack-trace">java.lang.RuntimeException: org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DAWN&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13068, moz:profile: C:\Users\RUPAM\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8e94731-0562-4dda-a819-de6e614260a1
+Caused by: org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DAWN&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13068, moz:profile: C:\Users\RUPAM\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8e94731-0562-4dda-a819-de6e614260a1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTimeouts.implicitlyWait(EventFiringWebDriver.java:670)
+	at challenge.mmt.util.ElementVisibility.isVisble(ElementVisibility.java:15)
+	at challenge2.mmt.WebPages.FlightResultPage.clearFilter(FlightResultPage.java:139)
+	at challenge2.mmt.tests.FlightPrices.dp(FlightPrices.java:54)
 	... 22 more
-... Removed 30 stack frames
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -359,21 +391,21 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'NoFilterFlightCounts')
-data.setCell(0, 2, 'challenge2.mmt.tests.FlightCounts')
-data.setCell(0, 3, 13833);
+data.setCell(0, 1, 'searchFlights')
+data.setCell(0, 2, 'challenge2.mmt.tests.SearchFlightTest')
+data.setCell(0, 3, 13666);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'searchFlights')
-data.setCell(1, 2, 'challenge2.mmt.tests.SearchFlightTest')
-data.setCell(1, 3, 13389);
+data.setCell(1, 1, 'NoFilterFlightCounts')
+data.setCell(1, 2, 'challenge2.mmt.tests.FlightCounts')
+data.setCell(1, 3, 12770);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'NoStopsFlightCount')
 data.setCell(2, 2, 'challenge2.mmt.tests.FlightCounts')
-data.setCell(2, 3, 13185);
+data.setCell(2, 3, 4842);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'OnStopFlightCount')
 data.setCell(3, 2, 'challenge2.mmt.tests.FlightCounts')
-data.setCell(3, 3, 13172);
+data.setCell(3, 3, 64);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'FlightPrice')
 data.setCell(4, 2, 'challenge2.mmt.tests.FlightPrices')
@@ -382,7 +414,7 @@ window.suiteTableData['Selenium_Coding_challenge_Part_2-_Naveen_Automation_Labs'
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Selenium_Coding_challenge_Part_2-_Naveen_Automation_Labs">
               </div> <!-- times-div-Selenium_Coding_challenge_Part_2-_Naveen_Automation_Labs -->
             </div> <!-- times-div -->
@@ -418,7 +450,7 @@ return data;
               <div class="chronological-class-name">challenge2.mmt.tests.SearchFlightTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">searchFlights</span>
-                <span class="method-start">32802 ms</span>
+                <span class="method-start">28279 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -427,26 +459,28 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">NoFilterFlightCounts</span>
-                <span class="method-start">46266 ms</span>
+                <span class="method-start">42017 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">NoStopsFlightCount</span>
-                <span class="method-start">60111 ms</span>
+                <span class="method-start">54811 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">OnStopFlightCount</span>
-                <span class="method-start">73302 ms</span>
+                <span class="method-start">59663 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">challenge2.mmt.tests.TestSetup</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">100329 ms</span>
+                <span class="method-start">59959 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
